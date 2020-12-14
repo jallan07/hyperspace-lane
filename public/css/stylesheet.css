@@ -36,6 +36,11 @@ body {
 
 h1 {
   font-family: 'star_jedi_hollowregular';
+  font-size: 85px;
+}
+
+#english-div label {
+  font-family: 'star_jediregular';
 }
 
 #aurebesh-div,
@@ -50,4 +55,16 @@ h1 {
 label {
   font-weight: 800;
   font-size: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 55px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  h1 {
+    font-size: 35px;
+  }
 }

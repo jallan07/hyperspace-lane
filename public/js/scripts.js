@@ -16,8 +16,8 @@ $(document).ready(() => {
       // set the quote variable
       const quote = data.starWarsQuote;
       // append the quote to the proper divs
-      englishQuote.append(`${quote}`);
-      aurebeshQuote.append(`${quote}`);
+      englishQuote.append(`<p>${quote}</p>`);
+      aurebeshQuote.append(`<p>${quote}</p>`);
     }
   );
 });
