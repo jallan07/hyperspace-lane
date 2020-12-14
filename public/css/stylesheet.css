@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'aurebeshregular';
+  src: url('../fonts/aurebesh/aurebesh-webfont.woff2') format('woff2'),
+    url('../fonts/aurebesh/aurebesh-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#aurebesh-div {
+  font-family: 'aurebeshregular';
+}
+
+label {
+  font-weight: 800;
+  font-size: 25px;
+}
