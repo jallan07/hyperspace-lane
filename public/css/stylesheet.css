@@ -1,3 +1,7 @@
+/* ============== */
+/* FONTS */
+/* ============== */
+/* aurebesh */
 @font-face {
   font-family: 'aurebeshregular';
   src: url('../fonts/aurebesh/aurebesh-webfont.woff2') format('woff2'),
@@ -5,9 +9,42 @@
   font-weight: normal;
   font-style: normal;
 }
+/* regular star wars */
+@font-face {
+  font-family: 'star_jediregular';
+  src: url('../fonts/starjedi/starjedi-webfont.woff2') format('woff2'),
+    url('../fonts/starjedi/starjedi-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* hollow star wars */
+@font-face {
+  font-family: 'star_jedi_hollowregular';
+  src: url('../fonts/starjedi/starjhol-webfont.woff2') format('woff2'),
+    url('../fonts/starjedi/starjhol-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-#aurebesh-div {
+/* ============== */
+/* GENERAL STYLING */
+/* ============== */
+body {
+  background: #000000;
+  color: #ffe81f;
+}
+
+h1 {
+  font-family: 'star_jedi_hollowregular';
+}
+
+#aurebesh-div,
+#aurebesh-quote {
   font-family: 'aurebeshregular';
+}
+
+#aurebesh-div textarea {
+  background: #bebebe;
 }
 
 label {
