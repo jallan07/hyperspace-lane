@@ -11,7 +11,7 @@ $(document).ready(() => {
 
   // api call for a random star wars quote
   $.get(
-    'http://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote',
+    '//swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote',
     (data) => {
       // set the quote variable
       const quote = data.starWarsQuote;
