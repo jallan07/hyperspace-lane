@@ -18,6 +18,10 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('*', function (req, res) {
+  res.redirect('/');
+});
+
 // establish a connection to the server
 app.listen(PORT, (req, res) => {
   console.log(`Server listening at http://localhost:${PORT}`);
