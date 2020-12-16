@@ -1,7 +1,8 @@
 // define the dependencies
 const express = require('express');
 const app = express();
-var exphbs = require('express-handlebars');
+const exphbs = require('express-handlebars');
+const compression = require('compression');
 
 // establish the port variable
 const PORT = process.env.PORT || 3030;
@@ -12,6 +13,9 @@ app.use(express.static('public'));
 // set the view engine
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
+
+// use the compression middleware
+app.use(compression());
 
 //define the routes
 app.get('/', function (req, res) {
